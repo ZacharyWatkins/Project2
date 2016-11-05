@@ -26,7 +26,7 @@ function submit2(){
   if (isNaN(guess2)) {
     window.alert("Must be a Number");
   }
-  else if (guess1 == 23){
+  else if (guess2 == 33){
     guess2 = Number(guess2);
     guess2 = guess2 - 22;
     window.alert("Your right! Move to the next page.");
@@ -42,14 +42,14 @@ function submit3(){
   if (isNaN(guess3)) {
     window.alert("Must be a Number");
   }
-  else if (guess3 == 23){
-    guess3 = Number(guess1);
+  else if (guess3 == 43){
+    guess3 = Number(guess3);
     guess3 = guess3 - 22;
     window.alert("Your right! Move to the next page.");
   }
   else {
     guess3 = Number(guess3);
-    guess3 = guess1 - guess3;
+    guess3 = guess3 - guess3;
     window.alert("Move to the next page");
   }
 }
