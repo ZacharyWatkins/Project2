@@ -26,7 +26,7 @@ function submit2(){
   }
   else if (guess2 == 33){
     guess2 = Number(guess2);
-    guess2 = guess2 - 22;
+    guess2 = guess2 - 32;
     window.alert("Your right! Move to the next page.");
   }
   else {
@@ -43,7 +43,7 @@ function submit3(){
   }
   else if (guess3 == 43){
     guess3 = Number(guess3);
-    guess3 = guess3 - 22;
+    guess3 = guess3 - 42;
     window.alert("Your right! Move to the next page.");
   }
   else {
