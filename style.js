@@ -17,9 +17,9 @@ function submit1(){
     guess1 = guess1 - guess1;
     window.alert("Move to the next page");
   }
-  correct = guess1;
-  console.log(correct);
-  setCookie("idea",correct);
+  setCookie("entered1",guess1);
+  setCookie("entered2",guess2);
+  setCookie("entered3",guess3);
 }
 function submit2(){
   guess2 = document.getElementById("choice").value;
@@ -36,9 +36,6 @@ function submit2(){
     guess2 = guess2 - guess2;
     window.alert("Move to the next page");
   }
-  correct = getCookie(idea) + guess2;
-  console.log(correct);
-  setCookie("idea",correct);
 }
 function submit3(){
   guess3 = document.getElementById("choice").value;
@@ -55,12 +52,16 @@ function submit3(){
     guess3 = guess1 - guess3;
     window.alert("Move to the next page");
   }
-  correct = getCookie(idea) + guess3;
-  console.log(correct);
-  setCookie("idea",correct);
 }
 function results(){
-  document.getElementById("subtotal").innerHTML=getCookie(idea);
+  var first = getCookie("entered1");
+  var second = getCookie("entered2");
+  var third = getCookie("entered3");
+  var percent;
+  percent = Number(first) + Number(second) + Number(third);
+  percent = percent / 3;
+  percent = percent * 100;
+  document.getElementById("subtotal").innerHTML=percent;
 }
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
