@@ -5,9 +5,9 @@ function submit(){
   if (isNaN(tester)) {
     window.alert("Must be a Number");
   }
-  else if (tester = 23){
+  else if (tester == 23){
     corect = 1;
-    window.alert("Move to the next page");
+    window.alert("Your right!");
   }
   else {
     corect = 0;
