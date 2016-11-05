@@ -1,0 +1,14 @@
+body {
+  background-color: grey;
+}
+.Answer {
+  background-color: white;
+  color: red;
+}
+p {
+  font-family: Verdana, Helvetica, sans-serif;
+  color: #0d0d0d
+}
+.Question {
+  background-color: white;
+}
