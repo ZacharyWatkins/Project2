@@ -13,6 +13,7 @@ function submit(){
     corect = 0;
     window.alert("Move to the next page");
   }
+  console.log(correct);
   setCookie("idea",correct);
 }
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
