@@ -6,13 +6,16 @@ function submit(){
     window.alert("Must be a Number");
   }
   else if (tester == 23){
-    corect = 1;
-    window.alert("Your right!");
+    tester = Number(tester);
+    tester = tester - 22;
+    window.alert("Your right! Move to the next page.");
   }
   else {
-    corect = 0;
+    tester = Number(tester);
+    tester = tester - tester;
     window.alert("Move to the next page");
   }
+  correct = tester;
   console.log(correct);
   setCookie("idea",correct);
 }
