@@ -1,6 +1,6 @@
 var tester
 var correct
-function submit(){
+function submit1(){
   tester = document.getElementById("choice").value;
   if (isNaN(tester)) {
     window.alert("Must be a Number");
@@ -8,6 +8,44 @@ function submit(){
   else if (tester == 23){
     tester = Number(tester);
     tester = tester - 22;
+    window.alert("Your right! Move to the next page.");
+  }
+  else {
+    tester = Number(tester);
+    tester = tester - tester;
+    window.alert("Move to the next page");
+  }
+  correct = tester;
+  console.log(correct);
+  setCookie("idea",correct);
+}
+function submit2(){
+  tester = document.getElementById("choice").value;
+  if (isNaN(tester)) {
+    window.alert("Must be a Number");
+  }
+  else if (tester == 32){
+    tester = Number(tester);
+    tester = tester - 31;
+    window.alert("Your right! Move to the next page.");
+  }
+  else {
+    tester = Number(tester);
+    tester = tester - tester;
+    window.alert("Move to the next page");
+  }
+  correct = tester;
+  console.log(correct);
+  setCookie("idea",correct);
+}
+function submit3(){
+  tester = document.getElementById("choice").value;
+  if (isNaN(tester)) {
+    window.alert("Must be a Number");
+  }
+  else if (tester == 2){
+    tester = Number(tester);
+    tester = tester - 1;
     window.alert("Your right! Move to the next page.");
   }
   else {
