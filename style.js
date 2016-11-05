@@ -1,12 +1,19 @@
 var tester
 function submit(){
+  var correct
   tester = document.getElementById("choice").value;
   if (isNaN(tester)) {
     window.alert("Must be a Number")
   }
-  else {
-    setCookie("idea",tester);
+  else if (tester = 23){
+    corect = 1
+    window.alert("Move to the next page")
   }
+  else {
+    corect = 0
+    window.alert("Move to the next page")
+  }
+  setCookie("idea",correct);
 }
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
