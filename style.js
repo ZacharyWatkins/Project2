@@ -1,61 +1,66 @@
-var tester
+var guess1
+var guess2
+var guess3
 var correct
 function submit1(){
-  tester = document.getElementById("choice").value;
-  if (isNaN(tester)) {
+  guess1 = document.getElementById("choice").value;
+  if (isNaN(guess1)) {
     window.alert("Must be a Number");
   }
-  else if (tester == 23){
-    tester = Number(tester);
-    tester = tester - 22;
+  else if (guess1 == 23){
+    guess1 = Number(guess1);
+    guess1 = guess1 - 22;
     window.alert("Your right! Move to the next page.");
   }
   else {
-    tester = Number(tester);
-    tester = tester - tester;
+    guess1 = Number(guess1);
+    guess1 = guess1 - guess1;
     window.alert("Move to the next page");
   }
-  correct = tester;
+  correct = guess1;
   console.log(correct);
   setCookie("idea",correct);
 }
 function submit2(){
-  tester = document.getElementById("choice").value;
-  if (isNaN(tester)) {
+  guess2 = document.getElementById("choice").value;
+  if (isNaN(guess2)) {
     window.alert("Must be a Number");
   }
-  else if (tester == 32){
-    tester = Number(tester);
-    tester = tester - 31;
+  else if (guess1 == 23){
+    guess2 = Number(guess2);
+    guess2 = guess2 - 22;
     window.alert("Your right! Move to the next page.");
   }
   else {
-    tester = Number(tester);
-    tester = tester - tester;
+    guess2 = Number(guess2);
+    guess2 = guess2 - guess2;
     window.alert("Move to the next page");
   }
-  correct = tester;
+  correct = getCookie(idea) + guess2;
   console.log(correct);
   setCookie("idea",correct);
 }
 function submit3(){
-  tester = document.getElementById("choice").value;
-  if (isNaN(tester)) {
+  guess3 = document.getElementById("choice").value;
+  if (isNaN(guess3)) {
     window.alert("Must be a Number");
   }
-  else if (tester == 2){
-    tester = Number(tester);
-    tester = tester - 1;
+  else if (guess3 == 23){
+    guess3 = Number(guess1);
+    guess3 = guess3 - 22;
     window.alert("Your right! Move to the next page.");
   }
   else {
-    tester = Number(tester);
-    tester = tester - tester;
+    guess3 = Number(guess3);
+    guess3 = guess1 - guess3;
     window.alert("Move to the next page");
   }
-  correct = tester;
+  correct = getCookie(idea) + guess3;
   console.log(correct);
   setCookie("idea",correct);
+}
+function results(){
+  document.getElementById("subtotal").innerHTML=getCookie(idea);
 }
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
