@@ -1,17 +1,17 @@
 var tester
+var correct
 function submit(){
-  var correct
   tester = document.getElementById("choice").value;
   if (isNaN(tester)) {
-    window.alert("Must be a Number")
+    window.alert("Must be a Number");
   }
   else if (tester = 23){
-    corect = 1
-    window.alert("Move to the next page")
+    corect = 1;
+    window.alert("Move to the next page");
   }
   else {
-    corect = 0
-    window.alert("Move to the next page")
+    corect = 0;
+    window.alert("Move to the next page");
   }
   setCookie("idea",correct);
 }
