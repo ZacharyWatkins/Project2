@@ -1,5 +1,5 @@
 var tester
-var correct
+var correct = 0;
 function submit(){
   tester = document.getElementById("choice").value;
   if (isNaN(tester)) {
