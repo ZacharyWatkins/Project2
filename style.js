@@ -7,9 +7,9 @@ function submit1(){
   if (isNaN(guess1)) {
     window.alert("Must be a Number");
   }
-  else if (guess1 == 23){
+  else if (guess1 == 654325){
     guess1 = Number(guess1);
-    guess1 = guess1 - 22;
+    guess1 = guess1 - 654324;
     window.alert("Your right! Move to the next page.");
   }
   else {
@@ -24,9 +24,9 @@ function submit2(){
   if (isNaN(guess2)) {
     window.alert("Must be a Number");
   }
-  else if (guess2 == 33){
+  else if (guess2 == 3579){
     guess2 = Number(guess2);
-    guess2 = guess2 - 32;
+    guess2 = guess2 - 3578;
     window.alert("Your right! Move to the next page.");
   }
   else {
@@ -41,9 +41,9 @@ function submit3(){
   if (isNaN(guess3)) {
     window.alert("Must be a Number");
   }
-  else if (guess3 == 43){
+  else if (guess3 == 72){
     guess3 = Number(guess3);
-    guess3 = guess3 - 42;
+    guess3 = guess3 - 71;
     window.alert("Your right! Move to the next page.");
   }
   else {
