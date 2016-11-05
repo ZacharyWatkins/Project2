@@ -61,7 +61,7 @@ function results(){
   percent = Number(first) + Number(second) + Number(third);
   percent = percent / 3;
   percent = percent * 100;
-  document.getElementById("percent").innerHTML=percent;
+  document.getElementById("percent").innerHTML=percent.toFixed(2);
   console.log(percent);
   console.log(first);
 }
