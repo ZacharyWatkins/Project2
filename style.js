@@ -63,6 +63,7 @@ function results(){
   percent = percent * 100;
   document.getElementById("subtotal").innerHTML=percent;
   console.log(percent);
+  console.log(first);
 }
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
