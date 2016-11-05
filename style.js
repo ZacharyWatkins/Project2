@@ -18,8 +18,6 @@ function submit1(){
     window.alert("Move to the next page");
   }
   setCookie("entered1",guess1);
-  setCookie("entered2",guess2);
-  setCookie("entered3",guess3);
 }
 function submit2(){
   guess2 = document.getElementById("choice").value;
@@ -36,6 +34,7 @@ function submit2(){
     guess2 = guess2 - guess2;
     window.alert("Move to the next page");
   }
+  setCookie("entered2",guess2);
 }
 function submit3(){
   guess3 = document.getElementById("choice").value;
@@ -52,6 +51,7 @@ function submit3(){
     guess3 = guess3 - guess3;
     window.alert("Move to the next page");
   }
+    setCookie("entered3",guess3);
 }
 function results(){
   var first = getCookie("entered1");
